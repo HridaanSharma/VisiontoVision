@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VisiontoVision"
+        tools:targetApi="31">
+        <activity
+            android:name=".closeyourrighteye"
+            android:exported="false" />
+        <activity
+            android:name=".alphabetlefteye"
+            android:exported="false" />
+        <activity
+            android:name=".Resultpage"
+            android:exported="false" />
+        <activity
+            android:name=".alphabetrighteye"
+            android:exported="false" />
+        <activity
+            android:name=".countdown"
+            android:exported="false" />
+        <activity
+            android:name=".splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".readypagehindi"
+            android:exported="false" />
+        <activity
+            android:name=".Instructionshindi"
+            android:exported="false" />
+        <activity
+            android:name=".Introductionhindi"
+            android:exported="false" />
+        <activity
+            android:name=".Hindienglish"
+            android:exported="false" />
+        <activity
+            android:name=".Readypage"
+            android:exported="false" />
+        <activity
+            android:name=".Instructions"
+            android:exported="false" />
+        <activity
+            android:name=".Introduction"
+            android:exported="false" />
+    </application>
+
+</manifest>
