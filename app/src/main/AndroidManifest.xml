@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,22 +16,22 @@
         android:theme="@style/Theme.VisiontoVision"
         tools:targetApi="31">
         <activity
-            android:name=".closeyourrighteye"
+            android:name="com.hridaan.visiontovision.closeyourrighteye"
             android:exported="false" />
         <activity
-            android:name=".alphabetlefteye"
+            android:name="com.hridaan.visiontovision.alphabetlefteye"
             android:exported="false" />
         <activity
-            android:name=".Resultpage"
+            android:name="com.hridaan.visiontovision.Resultpage"
             android:exported="false" />
         <activity
-            android:name=".alphabetrighteye"
+            android:name="com.hridaan.visiontovision.alphabetrighteye"
             android:exported="false" />
         <activity
-            android:name=".countdown"
+            android:name="com.hridaan.visiontovision.countdown"
             android:exported="false" />
         <activity
-            android:name=".splashscreen"
+            android:name="com.hridaan.visiontovision.splashscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,25 +40,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".readypagehindi"
+            android:name="com.hridaan.visiontovision.readypagehindi"
             android:exported="false" />
         <activity
-            android:name=".Instructionshindi"
+            android:name="com.hridaan.visiontovision.Instructionshindi"
             android:exported="false" />
         <activity
-            android:name=".Introductionhindi"
+            android:name="com.hridaan.visiontovision.Introductionhindi"
             android:exported="false" />
         <activity
-            android:name=".Hindienglish"
+            android:name="com.hridaan.visiontovision.Hindienglish"
             android:exported="false" />
         <activity
-            android:name=".Readypage"
+            android:name="com.hridaan.visiontovision.Readypage"
             android:exported="false" />
         <activity
-            android:name=".Instructions"
+            android:name="com.hridaan.visiontovision.Instructions"
             android:exported="false" />
         <activity
-            android:name=".Introduction"
+            android:name="com.hridaan.visiontovision.Introduction"
             android:exported="false" />
     </application>
 

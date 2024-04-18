@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Introductionhindi">
+    tools:context="com.hridaan.visiontovision.Introductionhindi">
     <TextView
         android:id="@+id/inthindi1"
         android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
         android:text="ऐप में आपका स्वागत है।\n\nऐप का मुख्य उद्देश्य आपकी आंखों का परीक्षण करना है। \n\nआरंभ करने के लिए कृपया नीचे दिए गए बटन पर क्लिक करें।"
-        android:textSize="30sp"
+        android:textSize="@dimen/_22sdp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,42 +37,37 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="-वर्ष 2045 तक सभी के लिए विजन"
-        android:textSize="30sp"
-        android:textStyle="italic"
         android:background="#faebd7"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="-वर्ष 2045 तक सभी के लिए विजन"
+        android:textSize="@dimen/_22sdp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/inthindi2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/inthindi1"
-        app:layout_constraintVertical_bias="0.144" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-->"
-        android:textSize="30sp"
-        android:background="@drawable/square_button_theme"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintTop_toBottomOf="@+id/inthindi1" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="250sp"
-        android:layout_height="250sp"
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="@dimen/_190sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inthindi2"
+        app:layout_constraintVertical_bias="0.19"
+        app:srcCompat="@drawable/img" />
+    <ImageView
+        android:id="@+id/arrow2"
+        android:layout_width="65dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.904"
-        app:srcCompat="@drawable/img" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/img_4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

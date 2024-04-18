@@ -11,7 +11,7 @@
     android:layout_height="wrap_content"
     android:background="#ffff00"
     android:text="Instructions"
-    android:textSize="50sp"
+    android:textSize="@dimen/_40sdp"
     android:textStyle="italic"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
@@ -25,8 +25,8 @@
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="1. Be attentive for the next minute \n2.Please keep your phone at a distance of 40cm \n3. You will be given a time of \n4.If your answer is correct then the letter will turn green otherwise it will turn red.\n5.Please be clear while saying the letter."
-        android:textSize="30sp"
+        android:text="1. Stay attentive for the next minute and move to a quiet place.\n2. Keep your phone at a distance of 40 cm.\n3. A set of letters will appear on your screen, and you need to click on the mic button to read them aloud.\n4. After reading the letters, a dialog box will appear, asking you to confirm your answer. Click yes to confirm and no to reject.\n5. Please be clear while reading the letters.\n6. If your answer is correct, the letters will turn green; otherwise, they will turn red.\n7. The size of the letters will decrease as we progress."
+        android:textSize="@dimen/_16sdp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,26 +37,29 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="200sp"
-        android:layout_height="200sp"
+        android:layout_width="188dp"
+        android:layout_height="146dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969"
+        app:layout_constraintTop_toBottomOf="@+id/content"
+        app:layout_constraintVertical_bias="0.428"
         app:srcCompat="@drawable/img_1" />
 
     <Button
         android:id="@+id/close"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/square_button_theme"
         android:text="CLOSE"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
+        app:layout_constraintVertical_bias="0.976" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

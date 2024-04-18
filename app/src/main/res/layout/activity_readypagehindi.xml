@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#90ee90"
-    tools:context=".readypagehindi">
+    tools:context="com.hridaan.visiontovision.readypagehindi">
 
     <TextView
         android:id="@+id/textView4"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".alphabetlefteye">
+    tools:context="com.hridaan.visiontovision.alphabetlefteye">
 <TextView
 android:id="@+id/alphaleft"
 android:layout_width="wrap_content"
@@ -17,17 +17,6 @@ app:layout_constraintStart_toStartOf="parent"
 app:layout_constraintTop_toTopOf="parent"
 app:layout_constraintVertical_bias="0.445" />
 
-<Button
-android:id="@+id/micbutton2"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="mic"
-app:layout_constraintBottom_toBottomOf="parent"
-app:layout_constraintEnd_toEndOf="parent"
-app:layout_constraintHorizontal_bias="0.498"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toBottomOf="@+id/alphaleft"
-app:layout_constraintVertical_bias="0.097" />
 
 <TextView
 android:id="@+id/dialogbox2"
@@ -47,6 +36,9 @@ android:id="@+id/confirmdecision2"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:text="yes"
+    android:textStyle="bold"
+    android:background="@drawable/square_button_theme"
+    app:backgroundTint="@null"
 app:layout_constraintBottom_toBottomOf="parent"
 app:layout_constraintEnd_toEndOf="parent"
 app:layout_constraintHorizontal_bias="0.253"
@@ -59,6 +51,9 @@ android:id="@+id/confirmdecisionno2"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:text="no"
+    android:textStyle="bold"
+    android:background="@drawable/square_button_theme"
+    app:backgroundTint="@null"
 app:layout_constraintBottom_toBottomOf="parent"
 app:layout_constraintEnd_toEndOf="parent"
 app:layout_constraintHorizontal_bias="0.733"
@@ -66,29 +61,41 @@ app:layout_constraintStart_toStartOf="parent"
 app:layout_constraintTop_toTopOf="parent"
 app:layout_constraintVertical_bias="0.85" />
 
-<TextView
-android:id="@+id/doyou2"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="do you want to confirm your answer?"
-android:textSize="25sp"
-app:layout_constraintBottom_toBottomOf="parent"
-app:layout_constraintEnd_toEndOf="parent"
-app:layout_constraintHorizontal_bias="0.0"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toTopOf="parent"
-app:layout_constraintVertical_bias="0.657" />
 
-    <Button
-        android:id="@+id/instructionbutton"
+    <TextView
+        android:id="@+id/doyou2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Instructions"
+        android:text="do you want to confirm your answer?"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/micbutton2"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <ImageView
+        android:id="@+id/infooo"
+        android:layout_width="66dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/img_3" />
+    <ImageView
+        android:id="@+id/micbutton2"
+        android:layout_width="75dp"
+        android:layout_height="57dp"
+        app:srcCompat="@drawable/img_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alphaleft"
+        app:layout_constraintVertical_bias="0.097" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
